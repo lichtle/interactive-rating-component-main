@@ -1,0 +1,6 @@
+@media (min-width: 576px) {
+  main.rating-box {
+    width: 27%;
+    min-height: 57%;
+  }
+}
