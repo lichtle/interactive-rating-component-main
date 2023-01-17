@@ -18,24 +18,26 @@ button {
 /* GROUP STYLING */
 
 img.star-icon,
-button.number {
+.number {
   background-color: var(--circle-color, hsl(216, 12%, 54%));
 }
 
-h1.question,
-button.submit-btn {
+.question,
+.submit-btn,
+.thank-you-title {
   color: var(--titles-color, hsl(0, 0%, 100%));
 }
 
-p.paragraph,
-button.number {
+.paragraph,
+.number,
+.thank-you-paragraph {
   color: var(--text-color, hsl(217, 12%, 63%));
 }
 
 /* SINGLE ELEMENT STYLING */
 
-main.rating-box {
-  width: 85%;
+.rating-box {
+  max-width: 85%;
   min-height: 45%;
   background-color: var(--rating-box-color, hsl(213, 19%, 18%));
   padding: 3rem;
@@ -61,7 +63,7 @@ div.rate-numbers {
   justify-content: space-between;
 }
 
-button.number {
+.number {
   border: none;
   width: 4.5rem;
   height: 4.5rem;
@@ -69,7 +71,7 @@ button.number {
   font-weight: 700;
 }
 
-button.submit-btn {
+.submit-btn {
   border: none;
   padding: 1.5rem;
   border-radius: 5rem;
@@ -88,6 +90,43 @@ button.submit-btn {
   color: var(--titles-color, hsl(0, 0%, 100%));
 }
 
+/* THANK YOU MESSAGE BOX */
+
+main.thank-you-message-box {
+  width: 85%;
+  height: 45%;
+  background-color: var(--rating-box-color, hsl(213, 19%, 18%));
+  padding: 3rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mobile-phone-icon {
+  width: 18rem;
+}
+
+.x-out-of-5-rate {
+  background-color: var(--circle-color, hsl(214, 19%, 25%));
+  color: var(--submit-btn, hsl(25, 97%, 53%));
+  padding: 0.8rem 1.5rem;
+  border-radius: 2.5rem;
+}
+
+.mobile-phone-icon,
+.x-out-of-5-rate,
+.thank-you-title {
+  align-self: center;
+}
+
+.thank-you-paragraph {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+/* MEDIA QUERIES */
+
 @media (hover: hover) {
   button.number:hover {
     transition: 0.2s ease-in-out;
@@ -101,6 +140,8 @@ button.submit-btn {
     color: var(--submit-btn, hsl(25, 97%, 53%));
   }
 }
+
+/* ATTRIBUITION */
 
 .attribution {
   font-size: 11px;
