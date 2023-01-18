@@ -1,5 +1,6 @@
 @media (min-width: 576px) {
-  main.rating-box {
+  main.rating-box,
+  main.thank-you-message-box {
     width: 27%;
     min-height: 65%;
     gap: 2rem;
@@ -7,10 +8,5 @@
 
   div.rate-numbers {
     gap: 1rem;
-  }
-
-  main.thank-you-message-box {
-    width: 27%;
-    min-height: 65%;
   }
 }
