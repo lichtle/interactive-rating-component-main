@@ -23,7 +23,4 @@ submitButton.addEventListener("click", function () {
         <p class="thank-you-paragraph">
           We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
         </p>`;
-
-  html.classList.remove("rating-box");
-  html.classList.add("thank-you-message-box");
 });
